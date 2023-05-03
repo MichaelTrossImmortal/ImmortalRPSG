@@ -54,25 +54,6 @@
     width: 100%;
 }
 
-.title {
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    text-align: center;
-    color: #fff;
-}
-
-.title h1{
-    font-size: 100px;
-    margin-top: 80px;
-}
-.title h2{
-    margin: 20px;
-    font-weight: 100;
-    line-height: 25px;
-}
-
 .disclaim {
     width: 99%;
     margin: 700px 10px;
@@ -134,4 +115,14 @@ button li a{
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
+}
+
+
+.referenzen{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
 }

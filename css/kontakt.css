@@ -54,23 +54,13 @@
     width: 100%;
 }
 
-.title {
+.erreich{
     width: 100%;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     text-align: center;
-    color: #fff;
-}
-
-.title h1{
-    font-size: 100px;
-    margin-top: 80px;
-}
-.title h2{
-    margin: 20px;
-    font-weight: 100;
-    line-height: 25px;
+    color: white;
 }
 
 .disclaim {
