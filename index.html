@@ -5,29 +5,43 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-    <div class="banner">
-        <div class="navbar">
-            <img src="logo.png" class="logo">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="wir.html">Über Uns</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
-                <li><a href="referenzen.html">Unsere Referenzen</a></li>
-                <li><a href="engagier.html">Engagier Uns</a></li>
-            </ul>
+    <div class="navbar">
+        <img src="logo.png" class="logo">
+        <ul class="nav-links">
+            <li class ="active"><a href="index.html">Home</a></li>
+            <li><a href="wir.html">Über Uns</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="referenzen.html">Unsere Referenzen</a></li>
+            <li><a href="engagier.html">Engagier Uns</a></li>
+        </ul>
+        <img src="./menue-btn.jpg" alt="" class="menu-btn">
+    </div>
+
+    <header>
+        <div class="header-content">
+            <h2>SicherungsGruppe (SG)</h2>
+            <div class="line"></div>
+            <h1>Ihre Experten in Sachen Sicherheit</h1>
         </div>
+    </header>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+
         <div class="disclaim">
             <div>
-                <h1>(Dies ist eine fiktive Seite im Dortmund Universum innerhalb von Immortal Roleplay.)</h1>
-                    <button type="button" href="test"><span></span><li><a href="https://immortal-roleplay.one">Disclaimer</a></li></button>
+                <h1>Diese Webseite wurde zu Zwecken von Grand Theft Auto V</h1><br>
+                <h1>Roleplay auf dem Server Immortal Roleplay erstellt.</h1><br>
+                <h1>Alle genannten Daten und Informationen sind fiktiv</h1><br>
+                <h1>und beziehen sich ausschließlich auf das Roleplay Universum</h1>
+                <a href="https://immortal-roleplay.one" class="button">Disclaimer</a>
             </div>
         </div>
-
-        <div class="title">
-            <h1>SicherungsGruppe</h1>
-            <h2>Ihre Experten in Sachen Sicherheit</h2>
-        </div>
-
-    </div>
 </body>
 </html>
