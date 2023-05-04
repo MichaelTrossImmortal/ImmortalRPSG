@@ -64,7 +64,7 @@
     display: none;
 }
 /* MOBILE DEVICE */
-@media only screen and (max-width:850px){
+/*@media only screen and (max-width:850px){
     .menu-btn{
         display: block;
     }
@@ -92,7 +92,7 @@
     .nav-links li{
         margin: 30px auto;
     }
-}
+}*/
 
 /* HEADER */
 
