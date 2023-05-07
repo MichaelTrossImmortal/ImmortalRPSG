@@ -1,29 +1,26 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    box-sizing: border-box;
 }
 
-.banner{
-    width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../background.jpeg);
-    background-size: cover;
-    background-position: center;
+.active {
+    color: whitesmoke;
+    text-decoration: underline;
+    font-weight: bold;
 }
+
+/* NAVBAR*/
 
 .navbar{
-    width: 85%;
-    margin: auto;
-    padding: 35px 0;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-}
-
-.logo{
-    width: 120px;
-    cursor: pointer;
+    padding: 50px;
+    color: whitesmoke;
 }
 
 .navbar ul li{
@@ -54,15 +51,60 @@
     width: 100%;
 }
 
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+.menu-btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+/* MOBILE DEVICE */
+
+@media only screen and (max-width:850px){
+    .menu-btn{
+        display: block;
+    }
+    .navbar{
+        padding: 0;
+    }
+    .logo{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .nav-links{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background-color: darkblue;
+        margin-top: -900px;
+        transition: all 0.5s ease;
+    }
+    .mobile-menu{
+        margin-top: 0px;
+        border-bottom: 30%;
+    }
+    .nav-links li{
+        margin: 30px auto;
+    }
+}
+
+/* DISCLAIM */
+
 .disclaim {
-    width: 26%;
+    width: 100%;
     bottom: 2px;
     cursor: pointer;
     position: absolute;
     background: transparent;
     color: white;
-    border: 1px;
-    border-radius: 2px;
     font-size: 8px;
     transform: translateY(-50%);
     text-align: left;
@@ -93,12 +135,39 @@
     transform: scale(1.1);
 }
 
+/* BODY */
 
-.ueber{
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+body{
+    background-color: rgba(1, 1, 39, 0.658);
+}
+
+header{
+    width: 100vw;
+    height: 100vh;
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+.team{
+    font-size: xx-large;
+    color: whitesmoke;
     text-align: center;
-    color: white;
+    margin-top: 10%;
+}
+
+.geschaeftsleitung{
+    width: 30vw;
+    height: 50vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../bilder/background.jpeg);
+    background-position: bottom;
+    background-size: cover;
+}
+
+.stellvertretung{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/bilder/background.jpeg);
+    background-position: bottom;
+    background-size: cover;
 }

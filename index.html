@@ -1,47 +1,72 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title> Immortal Roleplay Polizei Dortmund SG</title>
+	<title>Immortal Roleplay Polizei Dortmund SG</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>
-    <div class="navbar">
-        <img src="logo.png" class="logo">
-        <ul class="nav-links">
-            <li class ="active"><a href="index.html">Home</a></li>
-            <li><a href="wir.html">Über Uns</a></li>
-            <li><a href="kontakt.html">Kontakt</a></li>
-            <li><a href="referenzen.html">Unsere Referenzen</a></li>
-            <li><a href="engagier.html">Engagier Uns</a></li>
-        </ul>
-        <img src="./menue-btn.jpg" alt="" class="menu-btn">
-    </div>
-
-    <header>
-        <div class="header-content">
-            <h2>SicherungsGruppe (SG)</h2>
-            <div class="line"></div>
-            <h1>Ihre Experten in Sachen Sicherheit</h1>
+    <body>
+        <div class="navbar">
+            <img src="./bilder/logo.png" class="logo">
+                <ul class="nav-links">
+                    <li class ="active"><a href="index.html">Home</a></li>
+                    <li><a href="wir.html">Unser Team</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li><a href="referenzen.html">Unsere Referenzen</a></li>
+                    <li><a href="engagier.html">Engagier Uns</a></li>
+                </ul>
+            <img src="./bilder/menue-btn.jpg" alt="" class="menu-btn">
         </div>
-    </header>
 
-    <script>
-        const menuBtn = document.querySelector('.menu-btn')
-        const navlinks = document.querySelector('.nav-links')
+        <header>
+            <div class="header-content">
+                <h2>SicherungsGruppe (SG)</h2>
+                <div class="line"></div>
+                <h1>Ihre Experten in Sachen Sicherheit</h1>
+            </div>
+        </header>
 
-        menuBtn.addEventListener('click',()=>{
-            navlinks.classList.toggle('mobile-menu')
-        })
-    </script>
+        <script>
+            const menuBtn = document.querySelector('.menu-btn')
+            const navlinks = document.querySelector('.nav-links')
 
-        <div class="disclaim">
-            <div>
-                <h1>Diese Webseite wurde zu Zwecken von Grand Theft Auto V</h1><br>
-                <h1>Roleplay auf dem Server Immortal Roleplay erstellt.</h1><br>
-                <h1>Alle genannten Daten und Informationen sind fiktiv</h1><br>
-                <h1>und beziehen sich ausschließlich auf das Roleplay Universum</h1>
-                <a href="https://immortal-roleplay.one" class="button">Disclaimer</a>
+            menuBtn.addEventListener('click',()=>{
+                navlinks.classList.toggle('mobile-menu')
+            })
+        </script>
+
+
+        <!-- == Events == -->
+        <section>
+            <div class="title">
+                <h1> Unsere Aufgaben</h1>
+                <div class="line"></div>
+            </div>
+        </section>
+
+        <section class="aufgaben">
+            <div class="row">
+                <div class="col content-col">
+                    <h1>Objektschutz</h1>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et</p>
+                    <a href="#" class="ctn">Erfahre Mehr</a>
+                </div>
+                <div class="col image-col">
+                    <div class="image-gallery">
+                        <img src="./bilder/objektbewachung.jpg" alt="">
+                    </div>
+                </div>
             </div>
         </div>
-</body>
+
+        <!--<footer>
+            <br>
+            <hr>
+            <br>
+            <h1>DISCLAIMER</h1>
+            <p>Alle hier genannten Informationen und Daten sind fiktiv.</p>
+            <p>Sie dienen ausschließlich dem Zweck des Roleplays auf</p>
+            <p>Dem Grand Theft Auto 5 Server <a href="https://immortal-roleplay.one/" &shy;target="_blank" &shy;="">Immortal Roleplay</a></p>
+            <p>Es handelt sich hier um die SicherungsGruppe aus dem genannten Roleplay Universum</p>
+        </footer>-->
+    </body>
 </html>

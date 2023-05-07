@@ -1,26 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title> Immortal Roleplay Polizei Dortmund SG</title>
+	<title>Immortal Roleplay Polizei Dortmund SG</title>
 	<link rel="stylesheet" type="text/css" href="css/ueber.css">
 </head>
 <body>
-    <div class="banner">
-        <div class="navbar">
-            <img src="logo.png" class="logo">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="wir.html">Über Uns</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
-                <li><a href="referenzen.html">Unsere Referenzen</a></li>
-                <li><a href="engagier.html">Engagier Uns</a></li>
-            </ul>
-        </div>
+    <div class="navbar">
+        <img src="./bilder/logo.png" class="logo">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li class ="active"><a href="wir.html">Unser Team</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="referenzen.html">Unsere Referenzen</a></li>
+            <li><a href="engagier.html">Engagier Uns</a></li>
+        </ul>
+        <img src="./bilder/menue-btn.jpg" alt="" class="menu-btn">
+    </div>
 
-        <div class="ueber">
-            Über uns:
+    <header>
+        <div class="team">
+            <h2>Unsere Mitarbeiter:</h2>
+            <div class="line"></div>
+            <img src="geschaeftsleitung.png" class="geschaeftsleitung">
+            <img src="stellvertretung.png" class="stellvertretung">
         </div>
+    </header>
 
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
 
         <div class="disclaim">
             <div>
@@ -31,6 +44,5 @@
                 <a href="https://immortal-roleplay.one" class="button">Disclaimer</a>
             </div>
         </div>
-    </div>
 </body>
 </html>

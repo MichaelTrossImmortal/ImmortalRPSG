@@ -1,27 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title> Immortal Roleplay Polizei Dortmund SG</title>
-	<link rel="stylesheet" type="text/css" href="css/infos.css">
+	<title>Immortal Roleplay Polizei Dortmund SG</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-    <div class="banner">
-        <div class="navbar">
-            <img src="logo.png" class="logo">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="wir.html">Über Uns</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
-                <li><a href="referenzen.html">Unsere Referenzen</a></li>
-                <li><a href="engagier.html">Engagier Uns</a></li>
-            </ul>
+    <div class="navbar">
+        <img src="logo.png" class="logo">
+        <ul class="nav-links">
+            <li class ="active"><a href="index.html">Home</a></li>
+            <li><a href="wir.html">Unser Team</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="referenzen.html">Unsere Referenzen</a></li>
+            <li><a href="engagier.html">Engagier Uns</a></li>
+        </ul>
+        <img src="./menue-btn.jpg" alt="" class="menu-btn">
+    </div>
+
+    <header>
+        <div class="header-content">
+            <h2>SicherungsGruppe (SG)</h2>
+            <div class="line"></div>
+            <h1>Ihre Experten in Sachen Sicherheit</h1>
         </div>
+    </header>
 
-        <div class="referenzen">
-            Referenzen
-        </div>
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
 
-
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
 
         <div class="disclaim">
             <div>
@@ -32,6 +43,5 @@
                 <a href="https://immortal-roleplay.one" class="button">Disclaimer</a>
             </div>
         </div>
-    </div>
 </body>
 </html>
