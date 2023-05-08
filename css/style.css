@@ -4,12 +4,6 @@
     box-sizing: border-box;
 }
 
-.active {
-    color: whitesmoke;
-    text-decoration: underline;
-    font-weight: bold;
-}
-
 body, html{
     overflow-x: hidden;
 }
@@ -118,7 +112,7 @@ header{
     text-align: center;
 }
 .header-content h2{
-    font-size: 4vmin;
+    font-size: 5vmin;
 }
 .line{
     width: 150px;
@@ -130,16 +124,22 @@ header{
 
 /* FOOTER */
 
-/*footer{
+.footer{
     width: 99%;
-    bottom: 0;
-    left: 0;
     position: absolute;
     padding: 50px;
-    color: white;
+    color: whitesmoke;
     background-color: rgb(13, 13, 57);
     text-align: center;
-}*/
+}
+
+.footer h1{
+    color: whitesmoke;
+}
+
+.footer a{
+    color: whitesmoke;
+}
 
 
 /* EVENTS */
@@ -155,37 +155,18 @@ section {
     font-size: 4vmin;
 }
 
-.aufgaben .row .col {
-    width: 50%;
-}
 
-.aufgaben .image-gallery{
-    display: flex;
-    flex-wrap: wrap;
-}
+/* AUFGABEN */
 
-.image-gallery img{
-    width: 250px;
-    margin: 10px;
-}
+.aufgaben img{
+    float: left;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    max-width: 420px;
+    margin-right: 15px;
+} 
 
-.content-collumn{
-    width: 40%;
-}
-
-.image-collumn{
-    width: 60%;
-}
-
-.row{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: space-between;
-}
-
-.row .col {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.aufgaben h1{
+    font-size: 5vmin;
+    text-align: center;
 }
