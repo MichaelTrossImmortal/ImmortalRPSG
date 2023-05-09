@@ -53,19 +53,19 @@ body, html{
     width: 120px;
     cursor: pointer;
 }
-.menu-btn {
+
+.menu-btn{
     position: absolute;
     top: 30px;
     right: 30px;
     width: 40px;
-    cursor: pointer;
     display: none;
 }
 
 /* MOBILE DEVICE */
 
-@media only screen and (max-width:850px){
-    .menu-btn{
+@media only screen and (max-width:850px) {
+    .menu-btn {
         display: block;
     }
     .navbar{
@@ -78,19 +78,20 @@ body, html{
     }
     .nav-links{
         flex-direction: column;
-        width: 99%;
+        width: 100%;
         height: 100vh;
         justify-content: center;
-        background-color: darkblue;
+        background-color: #49497e;
         margin-top: -900px;
         transition: all 0.5s ease;
     }
+    .nav-links li{
+        margin: 30px auto;
+    }
+
     .mobile-menu{
         margin-top: 0px;
         border-bottom-right-radius: 30%;
-    }
-    .nav-links li{
-        margin: 30px auto;
     }
 }
 
@@ -156,6 +157,63 @@ section {
 }
 
 
+/* WIR */
+
+h4 {
+    font-size: 3vmin;
+    color: #49497e;
+    margin: 20px auto;
+}
+
+p {
+    color: #49497e;
+}
+
+.rowLeit {
+    display: flex;
+    align-items: center;
+    padding-left: 17%;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.colLeit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 300px;
+}
+
+.colLeit img{
+    align-items: center;
+    border-radius: 50px;
+    height: 30vmin;
+    width: 30vmin;
+}
+
+.rowMit {
+    display: flex;
+    align-items: center;
+    padding-left: 0%;
+    justify-content: space-between;
+    background: transparent;
+    margin-bottom: 20px;
+}
+
+.colMit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.colMit img{
+    align-items: center;
+    border-radius: 50px;
+    height: 30vmin;
+    width: 30vmin;
+}
+
 /* AUFGABEN */
 
 .aufgaben img{
@@ -169,4 +227,10 @@ section {
 .aufgaben h1{
     font-size: 5vmin;
     text-align: center;
+}
+
+/* REFERENZEN */
+
+.referenzen {
+    margin-top: 100px;
 }
