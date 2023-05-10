@@ -234,3 +234,11 @@ p {
 .referenzen {
     margin-top: 100px;
 }
+
+/* ENGAGIEREN */
+
+.textEngagier{
+    font-size: 3vmin;
+    color: #49497e;
+    margin: 20px auto;
+}
