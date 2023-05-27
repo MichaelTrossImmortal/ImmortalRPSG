@@ -29,9 +29,12 @@ body, html{
 }
 
 .navbar ul li a{
+    font-size: 18px;
+    color: #ededed;
     text-decoration: none;
-    color: #fff;
-    text-transform: uppercase;
+    font-weight: 500;
+    margin-left: 35px;
+    
 }
 
 .navbar ul li::after {
@@ -159,6 +162,16 @@ section {
 
 /* WIR */
 
+.title h2 {
+    font-size: 3vmax;
+    color: black;
+    align-self: center;
+}
+.title h3 {
+    font-size: 3vmax;
+    color: black;
+    align-self: center;
+}
 h4 {
     font-size: 3vmin;
     color: #49497e;
@@ -212,6 +225,19 @@ p {
     border-radius: 50px;
     height: 30vmin;
     width: 30vmin;
+}
+
+
+.mitarbeiterDropdown ul{
+    list-style: none;
+
+}
+
+.mitarbeiterDropdown h2{
+    font-size: 3vmax;
+    color: black;
+    align-self: center;
+    align-items: center;
 }
 
 /* AUFGABEN */
